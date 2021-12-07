@@ -9,3 +9,4 @@ Resources i have followed:
 2) https://dev.to/ccleary00/project-structure-for-an-express-rest-api-when-there-is-no-standard-way-4gk3
 3) https://www.youtube.com/watch?v=F-5D-n91hMc
 4) https://github.com/goldbergyoni/nodebestpractices
+5) https://dev.to/nedsoft/getting-started-with-sequelize-and-postgres-emp

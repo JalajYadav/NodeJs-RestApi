@@ -10,3 +10,16 @@ Resources i have followed:
 3) https://www.youtube.com/watch?v=F-5D-n91hMc
 4) https://github.com/goldbergyoni/nodebestpractices
 5) https://dev.to/nedsoft/getting-started-with-sequelize-and-postgres-emp
+
+
+
+Commands in the terminal i used:
+1) npm init
+2) npm i sequelize pg pg-hstore
+3) npm install -g sequelize-cli
+4) touch .sequelizerc
+5) sequelize init
+6) npx sequelize-cli model:generate --name user --attributes profileImg:string,firstName:string,lastName:string,email:string,phone:string,password:string,dob:'string',gender:enum:'{male,female}',token:String,isDeleted:boolean;
+7) npx sequelize-cli model:generate --name post --attributes description:string,userId:integer,isDeleted:boolean;
+8) npx sequelize-cli model:generate --name postLike --attributes postId:integer,userId:integer;
+9) npx sequelize-cli model:generate --name postMedia --attributes url:string,postId:integer,type:enum:'{image,video}';

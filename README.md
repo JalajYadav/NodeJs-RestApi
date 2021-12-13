@@ -18,8 +18,10 @@ Commands in the terminal i used:
 2) npm i sequelize pg pg-hstore
 3) npm install -g sequelize-cli
 4) touch .sequelizerc
-5) sequelize init
-6) npx sequelize-cli model:generate --name user --attributes profileImg:string,firstName:string,lastName:string,email:string,phone:string,password:string,dob:'string',gender:enum:'{male,female}',token:String,isDeleted:boolean;
-7) npx sequelize-cli model:generate --name post --attributes description:string,userId:integer,isDeleted:boolean;
-8) npx sequelize-cli model:generate --name postLike --attributes postId:integer,userId:integer;
-9) npx sequelize-cli model:generate --name postMedia --attributes url:string,postId:integer,type:enum:'{image,video}';
+5) createdb -U postgres database-development; // Inorder to create database u will run the following command
+6) sequelize init
+7) npx sequelize-cli model:generate --name user --attributes profileImg:string,firstName:string,lastName:string,email:string,phone:string,password:string,dob:'string',gender:enum:'{male,female}',token:String,isDeleted:boolean;
+8) npx sequelize-cli model:generate --name post --attributes description:string,userId:integer,isDeleted:boolean;
+9) npx sequelize-cli model:generate --name postLike --attributes postId:integer,userId:integer;
+10) npx sequelize-cli model:generate --name postMedia --attributes url:string,postId:integer,type:enum:'{image,video}';
+11) sequelize db:migrate

@@ -25,3 +25,4 @@ Commands in the terminal i used:
 9) npx sequelize-cli model:generate --name postLike --attributes postId:integer,userId:integer;
 10) npx sequelize-cli model:generate --name postMedia --attributes url:string,postId:integer,type:enum:'{image,video}';
 11) sequelize db:migrate
+12) sequelize db:seed:all

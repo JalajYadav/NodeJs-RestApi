@@ -9,8 +9,7 @@ const login = (req, res, next) => {
             console.log(err);
             return;
         }
-        const result = await authServices.loginUser(fields);
-        res.send(result);
+        await authServices.loginUser(res, fields);
     });
 }
 
@@ -22,8 +21,7 @@ const register = (req, res, next) => {
             console.log(err);
             return;
         }
-        const result = await authServices.registerUser(fields, files);
-        res.send(result);
+        await authServices.registerUser(res, fields, files);
     });
 }
 

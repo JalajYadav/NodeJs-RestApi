@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      postMedia.belongsTo(models.Post, {
+      postMedia.belongsTo(models.post, {
         foreignKey: 'postId',
         as: 'post'
       })

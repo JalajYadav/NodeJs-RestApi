@@ -11,12 +11,12 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      Post.hasMany(models.postLikes, {
+      post.hasMany(models.postLike, {
         foreignKey: 'postId',
         as: 'postLikes',
         onDelete: 'CASCADE',
       });
-      Post.hasMany(models.postMedia, {
+      post.hasMany(models.postMedia, {
         foreignKey: 'postId',
         as: 'postMedias',
         onDelete: 'CASCADE',

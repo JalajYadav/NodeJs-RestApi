@@ -31,3 +31,5 @@ Commands in the terminal i used:
 15) sequelize seed:generate --name postMedia
 16) sequelize db:seed:all
 
+⚠️ Note:
+It is always advisable to not store the tokens in the database as the database can be breached and accessed easily in a DB Attack. Once a user has access to the tokens of all the accounts in your database then he/she has access to all the data at once without the need for decrypting the passwords. So pls store a Uuid or Nanoid and use that to cross verify the auth of every subsequent request.

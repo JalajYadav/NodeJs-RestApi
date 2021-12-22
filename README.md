@@ -30,3 +30,4 @@ Commands in the terminal i used:
 14) sequelize seed:generate --name postLike
 15) sequelize seed:generate --name postMedia
 16) sequelize db:seed:all
+
